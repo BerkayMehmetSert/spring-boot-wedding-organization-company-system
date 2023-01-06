@@ -55,10 +55,10 @@ public class BusinessLogMessage {
 
         public static final String EMPLOYMENT_INCLUDE_NOT_FOUND = "EmploymentInclude not found, please check the id.";
         public static final String EMPLOYMENT_INCLUDE_LIST_EMPTY = "EmploymentInclude list is empty. Please add a employmentInclude.";
-        public static final String EMPLOYMENT_CREATED = "EmploymentInclude created successfully. EmploymentInclude name: ";
-        public static final String EMPLOYMENT_UPDATED = "EmploymentInclude updated successfully. EmploymentInclude id: ";
-        public static final String EMPLOYMENT_DELETED = "EmploymentInclude deleted successfully. EmploymentInclude id: ";
-        public static final String EMPLOYMENT_LISTED = "EmploymentInclude listed successfully.";
+        public static final String EMPLOYMENT_INCLUDE_CREATED = "EmploymentInclude created successfully. EmploymentInclude name: ";
+        public static final String EMPLOYMENT_INCLUDE__UPDATED = "EmploymentInclude updated successfully. EmploymentInclude id: ";
+        public static final String EMPLOYMENT_INCLUDE__DELETED = "EmploymentInclude deleted successfully. EmploymentInclude id: ";
+        public static final String EMPLOYMENT_INCLUDE__LISTED = "EmploymentInclude listed successfully.";
     }
 
     public static class EmploymentProvider {
