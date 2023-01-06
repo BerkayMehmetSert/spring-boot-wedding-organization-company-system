@@ -49,6 +49,7 @@ public class BusinessLogMessage {
         public static final String EMPLOYMENT_DELETED = "Employment deleted successfully. Employment id: ";
         public static final String EMPLOYMENT_LISTED = "Employment listed successfully.";
         public static final String EMPLOYMENT_FOUND = "Employment found successfully. Employment id: ";
+        public static final String EMPLOYMENT_PDF_GENERATED = "Employment pdf generated successfully. Employment id: ";
     }
 
     public static class EmploymentInclude {

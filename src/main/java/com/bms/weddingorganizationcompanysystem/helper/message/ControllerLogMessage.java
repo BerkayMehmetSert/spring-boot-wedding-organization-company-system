@@ -40,6 +40,7 @@ public class ControllerLogMessage {
         public static final String EMPLOYMENT_DELETED = "Employment Controller: Employment deleted successfully. Employment id: ";
         public static final String EMPLOYMENT_LISTED = "Employment Controller: Employment listed successfully.";
         public static final String EMPLOYMENT_FOUND = "Employment Controller: Employment found successfully. Employment id: ";
+        public static final String EMPLOYMENT_PDF_CREATED = "Employment Controller: Employment pdf created successfully. Employment id: ";
     }
 
     public static class EmploymentInclude {

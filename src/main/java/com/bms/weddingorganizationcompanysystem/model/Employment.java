@@ -22,6 +22,7 @@ public class Employment {
 
     @Column(length = 16,nullable = false)
     private String serviceCode;
+
     @Column(nullable = false)
     private String serviceName;
 
