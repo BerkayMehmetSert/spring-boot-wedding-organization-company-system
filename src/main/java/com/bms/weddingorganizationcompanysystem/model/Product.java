@@ -24,7 +24,7 @@ public class Product {
     private String productCode;
 
     @Column(nullable = false)
-    private String productName;
+    private String name;
 
     private String description;
 

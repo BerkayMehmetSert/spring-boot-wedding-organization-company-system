@@ -24,7 +24,7 @@ public class Partner {
     private String partnerCode;
 
     @Column(nullable = false)
-    private String partnerName;
+    private String name;
 
     @OneToMany(mappedBy = "partner")
     private List<EmploymentProvider> employmentProviders;
