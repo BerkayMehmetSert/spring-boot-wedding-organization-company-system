@@ -1,4 +1,4 @@
-package com.bms.weddingorganizationcompanysystem.request;
+package com.bms.weddingorganizationcompanysystem.request.country;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

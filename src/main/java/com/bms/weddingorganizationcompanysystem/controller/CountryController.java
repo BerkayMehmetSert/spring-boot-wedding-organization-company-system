@@ -2,8 +2,8 @@ package com.bms.weddingorganizationcompanysystem.controller;
 
 import com.bms.weddingorganizationcompanysystem.dto.CountryDto;
 import com.bms.weddingorganizationcompanysystem.helper.message.ControllerLogMessage;
-import com.bms.weddingorganizationcompanysystem.request.CreateCountryRequest;
-import com.bms.weddingorganizationcompanysystem.request.UpdateCountryRequest;
+import com.bms.weddingorganizationcompanysystem.request.country.CreateCountryRequest;
+import com.bms.weddingorganizationcompanysystem.request.country.UpdateCountryRequest;
 import com.bms.weddingorganizationcompanysystem.service.CountryService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;

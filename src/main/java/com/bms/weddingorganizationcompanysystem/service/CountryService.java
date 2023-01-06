@@ -9,8 +9,8 @@ import com.bms.weddingorganizationcompanysystem.helper.message.BusinessLogMessag
 import com.bms.weddingorganizationcompanysystem.helper.message.BusinessMessage;
 import com.bms.weddingorganizationcompanysystem.model.Country;
 import com.bms.weddingorganizationcompanysystem.repository.CountryRepository;
-import com.bms.weddingorganizationcompanysystem.request.CreateCountryRequest;
-import com.bms.weddingorganizationcompanysystem.request.UpdateCountryRequest;
+import com.bms.weddingorganizationcompanysystem.request.country.CreateCountryRequest;
+import com.bms.weddingorganizationcompanysystem.request.country.UpdateCountryRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
