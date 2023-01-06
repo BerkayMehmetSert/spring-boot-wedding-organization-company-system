@@ -48,17 +48,17 @@ public class CountryController {
 
     @GetMapping("/{id}")
     public ResponseEntity<CountryDto> findCountry(@PathVariable String id) {
-        CountryDto countryDto = countryService.findCountry(id);
+        CountryDto country = countryService.findCountry(id);
 
         log.info(ControllerLogMessage.Country.COUNTRY_FOUND + id);
-        return ResponseEntity.ok(countryDto);
+        return ResponseEntity.ok(country);
     }
 
     @GetMapping
-    public ResponseEntity<List<CountryDto>> findAllCountry() {
-        List<CountryDto> countryDtoList = countryService.findAllCountry();
+    public ResponseEntity<List<CountryDto>> findAllCountries() {
+        List<CountryDto> countries = countryService.findAllCountries();
 
         log.info(ControllerLogMessage.Country.COUNTRY_LISTED);
-        return ResponseEntity.ok(countryDtoList);
+        return ResponseEntity.ok(countries);
     }
 }

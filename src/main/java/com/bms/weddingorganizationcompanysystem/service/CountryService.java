@@ -62,7 +62,7 @@ public class CountryService {
         return converter.convert(findCountryById(id));
     }
 
-    public List<CountryDto> findAllCountry() {
+    public List<CountryDto> findAllCountries() {
         List<Country> countries = countryRepository.findAll();
 
         if (countries.isEmpty()) {
