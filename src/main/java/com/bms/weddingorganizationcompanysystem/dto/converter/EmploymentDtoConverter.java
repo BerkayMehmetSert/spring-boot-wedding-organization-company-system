@@ -7,10 +7,10 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 @Component
-public class EmploymentDtoController {
+public class EmploymentDtoConverter {
     private final EmploymentEmploymentProviderDtoConverter converter;
 
-    public EmploymentDtoController(EmploymentEmploymentProviderDtoConverter converter) {
+    public EmploymentDtoConverter(EmploymentEmploymentProviderDtoConverter converter) {
         this.converter = converter;
     }
 
