@@ -278,4 +278,12 @@ public class BusinessLogMessage {
         public static final String WEDDING_LISTED = "Wedding listed successfully.";
         public static final String WEDDING_FOUND = "Wedding found successfully. Wedding id: ";
     }
+
+    public static class Pdf {
+        private Pdf() {
+            throw new IllegalStateException(BusinessMessage.ILLEGAL_STATE_EXCEPTION);
+        }
+
+        public static final String PDF_CREATED = "Pdf created successfully. Pdf name: ";
+    }
 }
