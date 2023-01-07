@@ -269,13 +269,15 @@ public class BusinessLogMessage {
     }
 
     public static class Wedding {
+        public static final String WEDDING_COMPLETED = "Wedding completed successfully. Wedding id: ";
+
         private Wedding() {
             throw new IllegalStateException(BusinessMessage.ILLEGAL_STATE_EXCEPTION);
         }
 
         public static final String WEDDING_NOT_FOUND = "Wedding not found, please check the id.";
         public static final String WEDDING_LIST_EMPTY = "Wedding list is empty. Please add a wedding.";
-        public static final String WEDDING_CREATED = "Wedding created successfully. Wedding name: ";
+        public static final String WEDDING_CREATED = "Wedding created successfully.";
         public static final String WEDDING_UPDATED = "Wedding updated successfully. Wedding id: ";
         public static final String WEDDING_DELETED = "Wedding deleted successfully. Wedding id: ";
         public static final String WEDDING_LISTED = "Wedding listed successfully.";

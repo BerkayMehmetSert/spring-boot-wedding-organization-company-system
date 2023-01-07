@@ -226,11 +226,13 @@ public class ControllerLogMessage {
     }
 
     public static class Wedding {
+        public static final String WEDDING_COMPLETED = "Wedding Controller: Wedding completed successfully. Wedding id: ";
+
         private Wedding() {
             throw new IllegalStateException(BusinessMessage.ILLEGAL_STATE_EXCEPTION);
         }
 
-        public static final String WEDDING_CREATED = "Wedding Controller: Wedding created successfully. Wedding name: ";
+        public static final String WEDDING_CREATED = "Wedding Controller: Wedding created successfully.";
         public static final String WEDDING_UPDATED = "Wedding Controller: Wedding updated successfully. Wedding id: ";
         public static final String WEDDING_DELETED = "Wedding Controller: Wedding deleted successfully. Wedding id: ";
         public static final String WEDDING_LISTED = "Wedding Controller: Wedding listed successfully.";
