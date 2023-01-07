@@ -38,11 +38,15 @@ public class ProductIncludeService {
 
     public void createProductInclude(final CreateProductIncludeRequest request) {
         ProductInclude productInclude = ProductInclude.builder()
-                .price(request.getPrice())
+                .price(0.0)
                 .productProvider(productProviderService.findProductProviderById(request.getProductProviderId()))
                 .event(eventService.findEventById(request.getEventId()))
                 .status(statusService.findStatusById(request.getStatusId()))
                 .build();
+
+        if (productInclude.getProductProvider() != null){
+            productInclude.setPrice(productInclude.getProductProvider().getProduct().getPrice());
+        }
 
         productIncludeRepository.save(productInclude);
         log.info(BusinessLogMessage.ProductInclude.PRODUCT_INCLUDE_CREATED);
@@ -51,7 +55,6 @@ public class ProductIncludeService {
     public void updateProductInclude(final String id, final UpdateProductIncludeRequest request) {
         ProductInclude productInclude = findProductIncludeById(id);
 
-        productInclude.setPrice(request.getPrice());
         productInclude.setStatus(statusService.findStatusById(request.getStatusId()));
 
         productIncludeRepository.save(productInclude);

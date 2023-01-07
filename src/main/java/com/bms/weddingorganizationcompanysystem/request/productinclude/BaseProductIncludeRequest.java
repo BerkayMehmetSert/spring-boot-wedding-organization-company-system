@@ -8,7 +8,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class BaseProductIncludeRequest {
-    private Double price;
     private String statusId;
 
 }
