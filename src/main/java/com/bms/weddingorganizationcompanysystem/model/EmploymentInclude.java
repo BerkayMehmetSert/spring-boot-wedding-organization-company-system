@@ -32,5 +32,5 @@ public class EmploymentInclude {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "employment_provider_id")
-    private EmploymentProvider employeeProvider;
+    private EmploymentProvider employmentProvider;
 }

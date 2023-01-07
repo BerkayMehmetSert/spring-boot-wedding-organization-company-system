@@ -14,7 +14,7 @@ public class EmploymentIncludeDtoConverter {
                 from.getPrice(),
                 from.getStatus() != null ? from.getStatus().getId() : null,
                 from.getEvent() != null ? from.getEvent().getId() : null,
-                from.getEmployeeProvider() != null ? from.getEmployeeProvider().getId() : null
+                from.getEmploymentProvider() != null ? from.getEmploymentProvider().getId() : null
         );
     }
 
