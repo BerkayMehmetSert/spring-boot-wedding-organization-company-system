@@ -111,6 +111,9 @@ public class BusinessLogMessage {
     }
 
     public static class Invoice {
+        public static final String INVOICE_PAID = "Invoice paid successfully. Invoice id: ";
+        public static final String INVOICE_PDF_GENERATED = "Invoice pdf generated successfully. Invoice id: ";
+
         private Invoice() {
             throw new IllegalStateException(BusinessMessage.ILLEGAL_STATE_EXCEPTION);
         }

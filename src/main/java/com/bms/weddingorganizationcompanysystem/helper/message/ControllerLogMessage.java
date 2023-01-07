@@ -94,6 +94,9 @@ public class ControllerLogMessage {
     }
 
     public static class Invoice {
+        public static final String INVOICE_PDF_CREATED = "Invoice Controller: Invoice pdf created successfully. Invoice id: ";
+        public static final String INVOICE_PAID = "Invoice Controller: Invoice paid successfully. Invoice id: ";
+
         private Invoice() {
             throw new IllegalStateException(BusinessMessage.ILLEGAL_STATE_EXCEPTION);
         }
