@@ -22,7 +22,6 @@ public class Person {
     @GenericGenerator(name = "UUID", strategy = "org.hibernate.id.UUIDGenerator")
     private String id;
 
-    @Column(length = 16, nullable = false)
     private String personCode;
 
     @Column(length = 64, nullable = false)

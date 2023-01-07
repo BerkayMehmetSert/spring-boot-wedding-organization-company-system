@@ -22,7 +22,6 @@ public class Wedding {
     @GenericGenerator(name = "UUID", strategy = "org.hibernate.id.UUIDGenerator")
     private String id;
 
-    @Column(length = 16, nullable = false)
     private String weddingCode;
 
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")

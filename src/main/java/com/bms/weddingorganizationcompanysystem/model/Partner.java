@@ -20,7 +20,6 @@ public class Partner {
     @GenericGenerator(name = "UUID", strategy = "org.hibernate.id.UUIDGenerator")
     private String id;
 
-    @Column(length = 16, nullable = false)
     private String partnerCode;
 
     @Column(nullable = false)
