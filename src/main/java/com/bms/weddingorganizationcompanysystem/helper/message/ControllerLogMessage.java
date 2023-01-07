@@ -212,6 +212,8 @@ public class ControllerLogMessage {
     }
 
     public static class Status {
+        public static final String STATUS_COMPLETED = "Status Controller: Status completed successfully. Status id: ";
+
         private Status() {
             throw new IllegalStateException(BusinessMessage.ILLEGAL_STATE_EXCEPTION);
         }
