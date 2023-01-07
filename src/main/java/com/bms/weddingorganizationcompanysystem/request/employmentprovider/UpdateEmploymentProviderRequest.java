@@ -1,0 +1,4 @@
+package com.bms.weddingorganizationcompanysystem.request.employmentprovider;
+
+public class UpdateEmploymentProviderRequest extends BaseEmploymentProviderRequest{
+}
