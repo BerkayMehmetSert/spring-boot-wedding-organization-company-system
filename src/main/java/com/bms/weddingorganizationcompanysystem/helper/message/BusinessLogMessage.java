@@ -111,13 +111,12 @@ public class BusinessLogMessage {
     }
 
     public static class Invoice {
-        public static final String INVOICE_PAID = "Invoice paid successfully. Invoice id: ";
-        public static final String INVOICE_PDF_GENERATED = "Invoice pdf generated successfully. Invoice id: ";
-
         private Invoice() {
             throw new IllegalStateException(BusinessMessage.ILLEGAL_STATE_EXCEPTION);
         }
 
+        public static final String INVOICE_PAID = "Invoice paid successfully. Invoice id: ";
+        public static final String INVOICE_PDF_GENERATED = "Invoice pdf generated successfully. Invoice id: ";
         public static final String INVOICE_NOT_FOUND = "Invoice not found, please check the id.";
         public static final String INVOICE_LIST_EMPTY = "Invoice list is empty. Please add a invoice.";
         public static final String INVOICE_CREATED = "Invoice created successfully. Invoice name: ";
@@ -257,12 +256,11 @@ public class BusinessLogMessage {
     }
 
     public static class Status {
-        public static final String STATUS_COMPLETED = "Status completed successfully. Status id: ";
-
         private Status() {
             throw new IllegalStateException(BusinessMessage.ILLEGAL_STATE_EXCEPTION);
         }
 
+        public static final String STATUS_COMPLETED = "Status completed successfully. Status id: ";
         public static final String STATUS_NOT_FOUND = "Status not found, please check the id.";
         public static final String STATUS_LIST_EMPTY = "Status list is empty. Please add a status.";
         public static final String STATUS_ALREADY_EXISTS = "Status already exists, please check the name.";
@@ -274,12 +272,11 @@ public class BusinessLogMessage {
     }
 
     public static class Wedding {
-        public static final String WEDDING_COMPLETED = "Wedding completed successfully. Wedding id: ";
-
         private Wedding() {
             throw new IllegalStateException(BusinessMessage.ILLEGAL_STATE_EXCEPTION);
         }
 
+        public static final String WEDDING_COMPLETED = "Wedding completed successfully. Wedding id: ";
         public static final String WEDDING_NOT_FOUND = "Wedding not found, please check the id.";
         public static final String WEDDING_LIST_EMPTY = "Wedding list is empty. Please add a wedding.";
         public static final String WEDDING_CREATED = "Wedding created successfully.";

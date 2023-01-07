@@ -68,12 +68,11 @@ public class ControllerLogMessage {
     }
 
     public static class Event {
-        public static final String EVENT_COMPLETED = "Event Controller: Event completed successfully. Event id: ";
-
         private Event() {
             throw new IllegalStateException(BusinessMessage.ILLEGAL_STATE_EXCEPTION);
         }
 
+        public static final String EVENT_COMPLETED = "Event Controller: Event completed successfully. Event id: ";
         public static final String EVENT_CREATED = "Event Controller: Event created successfully. Event name: ";
         public static final String EVENT_UPDATED = "Event Controller: Event updated successfully. Event id: ";
         public static final String EVENT_DELETED = "Event Controller: Event deleted successfully. Event id: ";
@@ -94,13 +93,12 @@ public class ControllerLogMessage {
     }
 
     public static class Invoice {
-        public static final String INVOICE_PDF_CREATED = "Invoice Controller: Invoice pdf created successfully. Invoice id: ";
-        public static final String INVOICE_PAID = "Invoice Controller: Invoice paid successfully. Invoice id: ";
-
         private Invoice() {
             throw new IllegalStateException(BusinessMessage.ILLEGAL_STATE_EXCEPTION);
         }
 
+        public static final String INVOICE_PDF_CREATED = "Invoice Controller: Invoice pdf created successfully. Invoice id: ";
+        public static final String INVOICE_PAID = "Invoice Controller: Invoice paid successfully. Invoice id: ";
         public static final String INVOICE_CREATED = "Invoice Controller: Invoice created successfully. Invoice name: ";
         public static final String INVOICE_UPDATED = "Invoice Controller: Invoice updated successfully. Invoice id: ";
         public static final String INVOICE_DELETED = "Invoice Controller: Invoice deleted successfully. Invoice id: ";
@@ -217,12 +215,11 @@ public class ControllerLogMessage {
     }
 
     public static class Status {
-        public static final String STATUS_COMPLETED = "Status Controller: Status completed successfully. Status id: ";
-
         private Status() {
             throw new IllegalStateException(BusinessMessage.ILLEGAL_STATE_EXCEPTION);
         }
 
+        public static final String STATUS_COMPLETED = "Status Controller: Status completed successfully. Status id: ";
         public static final String STATUS_CREATED = "Status Controller: Status created successfully. Status name: ";
         public static final String STATUS_UPDATED = "Status Controller: Status updated successfully. Status id: ";
         public static final String STATUS_DELETED = "Status Controller: Status deleted successfully. Status id: ";
@@ -231,12 +228,11 @@ public class ControllerLogMessage {
     }
 
     public static class Wedding {
-        public static final String WEDDING_COMPLETED = "Wedding Controller: Wedding completed successfully. Wedding id: ";
-
         private Wedding() {
             throw new IllegalStateException(BusinessMessage.ILLEGAL_STATE_EXCEPTION);
         }
 
+        public static final String WEDDING_COMPLETED = "Wedding Controller: Wedding completed successfully. Wedding id: ";
         public static final String WEDDING_CREATED = "Wedding Controller: Wedding created successfully.";
         public static final String WEDDING_UPDATED = "Wedding Controller: Wedding updated successfully. Wedding id: ";
         public static final String WEDDING_DELETED = "Wedding Controller: Wedding deleted successfully. Wedding id: ";

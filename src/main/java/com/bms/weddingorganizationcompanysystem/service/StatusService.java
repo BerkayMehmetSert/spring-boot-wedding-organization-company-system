@@ -95,7 +95,7 @@ public class StatusService {
         return statusRepository.findById(id)
                 .orElseThrow(() -> {
                     log.error(BusinessLogMessage.Status.STATUS_NOT_FOUND + id);
-                    throw new StatusNotFoundException(BusinessLogMessage.Status.STATUS_NOT_FOUND + id);
+                    throw new StatusNotFoundException(BusinessMessage.Status.STATUS_NOT_FOUND + id);
                 });
     }
 

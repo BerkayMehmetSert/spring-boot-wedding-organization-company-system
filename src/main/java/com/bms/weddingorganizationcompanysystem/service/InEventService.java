@@ -67,7 +67,7 @@ public class InEventService {
         List<InEvent> inEvents = inEventRepository.findAll();
 
         if (inEvents.isEmpty()){
-            log.error(BusinessMessage.InEvent.IN_EVENT_LIST_EMPTY);
+            log.error(BusinessLogMessage.InEvent.IN_EVENT_LIST_EMPTY);
             throw new InEventListEmptyException(BusinessMessage.InEvent.IN_EVENT_LIST_EMPTY);
         }
 
