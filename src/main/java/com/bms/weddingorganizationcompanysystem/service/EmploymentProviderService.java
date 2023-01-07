@@ -71,7 +71,9 @@ public class EmploymentProviderService {
     }
 
     public List<EmploymentProviderDto> findAllEmploymentProviders() {
-        List<EmploymentProvider> employmentProviders = employmentProviderRepository.findAll();
+        List<EmploymentProvider> employmentProviders = employmentProviderRepository.findAll().stream()
+                .filter(x -> x.getIsActive().equals(true))
+                .toList();
 
         if (employmentProviders.isEmpty()) {
             log.error(BusinessLogMessage.EmploymentProvider.EMPLOYMENT_PROVIDER_LIST_EMPTY);
@@ -84,10 +86,12 @@ public class EmploymentProviderService {
     }
 
     protected EmploymentProvider findEmploymentProviderById(final String id) {
-        return employmentProviderRepository.findById(id).orElseThrow(() -> {
-            log.error(BusinessLogMessage.EmploymentProvider.EMPLOYMENT_PROVIDER_NOT_FOUND + id);
-            throw new EmploymentProviderNotFoundException(BusinessMessage
-                    .EmploymentProvider.EMPLOYMENT_PROVIDER_NOT_FOUND);
-        });
+        return employmentProviderRepository.findById(id)
+                .filter(x -> x.getIsActive().equals(true))
+                .orElseThrow(() -> {
+                    log.error(BusinessLogMessage.EmploymentProvider.EMPLOYMENT_PROVIDER_NOT_FOUND + id);
+                    throw new EmploymentProviderNotFoundException(BusinessMessage
+                            .EmploymentProvider.EMPLOYMENT_PROVIDER_NOT_FOUND);
+                });
     }
 }
