@@ -68,6 +68,8 @@ public class ControllerLogMessage {
     }
 
     public static class Event {
+        public static final String EVENT_COMPLETED = "Event Controller: Event completed successfully. Event id: ";
+
         private Event() {
             throw new IllegalStateException(BusinessMessage.ILLEGAL_STATE_EXCEPTION);
         }
