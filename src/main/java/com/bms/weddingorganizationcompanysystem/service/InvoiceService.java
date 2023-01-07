@@ -44,7 +44,7 @@ public class InvoiceService {
                 .wedding(weddingService.findWeddingById(request.getWeddingId()))
                 .build();
 
-        if (!invoice.getInvoiceItems().isEmpty()) {
+        if (invoice.getInvoiceItems() != null) {
             invoice.setInvoiceAmount(calculateInvoiceAmount(invoice.getInvoiceItems()));
         }
 
@@ -59,6 +59,10 @@ public class InvoiceService {
 
     public void updateInvoice(final String id, final UpdateInvoiceRequest request) {
         Invoice invoice = findInvoiceById(id);
+
+        if (invoice.getInvoiceItems() != null) {
+            invoice.setInvoiceAmount(calculateInvoiceAmount(invoice.getInvoiceItems()));
+        }
 
         invoice.setDueDate(request.getDueDate());
 
