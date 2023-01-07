@@ -217,7 +217,7 @@ public class BusinessLogMessage {
 
         public static final String PRODUCT_INCLUDE_NOT_FOUND = "ProductInclude not found, please check the id.";
         public static final String PRODUCT_INCLUDE_LIST_EMPTY = "ProductInclude list is empty. Please add a productInclude.";
-        public static final String PRODUCT_INCLUDE_CREATED = "ProductInclude created successfully. ProductInclude name: ";
+        public static final String PRODUCT_INCLUDE_CREATED = "ProductInclude created successfully.";
         public static final String PRODUCT_INCLUDE_UPDATED = "ProductInclude updated successfully. ProductInclude id: ";
         public static final String PRODUCT_INCLUDE_DELETED = "ProductInclude deleted successfully. ProductInclude id: ";
         public static final String PRODUCT_INCLUDE_LISTED = "ProductInclude listed successfully.";
