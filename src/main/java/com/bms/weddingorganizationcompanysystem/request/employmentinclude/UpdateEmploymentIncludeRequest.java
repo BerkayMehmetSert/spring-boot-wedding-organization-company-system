@@ -1,0 +1,3 @@
+package com.bms.weddingorganizationcompanysystem.request.employmentinclude;
+public class UpdateEmploymentIncludeRequest extends BaseEmploymentIncludeRequest{
+}
